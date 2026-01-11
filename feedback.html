@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback |IMAX</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #023e8a;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0077b6;
+        }
+
+        form {
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005f8f;
+        }
+
+        .contact-box {
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 IMAX</h1>
+    <p>Customer Feedback</p>
+</header>
+
+<nav>
+    <a href="cinema">Home</a>
+    <a href="About.html">About</a>
+    <a href="Book Ticket.html">Book Ticket</a>
+    <a href="Payment.html">Payment</a>
+</nav>
+
+<section>
+    <h2>We Value Your Feedback</h2>
+    <p>
+        Your feedback helps us improve our services and provide a better movie
+        experience for our customers.
+    </p>
+
+    <form onsubmit="submitFeedback(); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Write your feedback here..." required></textarea>
+        <br>
+        <input type="submit" value="Submit Feedback">
+    </form>
+
+ <div class="contact-box">
+<center><h2> Customer Support</h2></center>
+        <p><b>Cinema Name:</b>IMAX PUNE</p>
+        <p><b>Address:</b> Finix Mall,Pune , India</p>
+        <p><b>Phone:</b> +91 98765 43210</p>
+        <p><b>Email:</b> imaxpune@gmail.com</p>
+        <p><b>Working Hours:</b> 9:00 AM – 11:30 PM</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 IMAX| Feedback Page</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Ticket | IMAX</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#f4f6f8;
+        color:#333;
+    }
+
+    header{
+        background:#0077b6;
+        color:white;
+        text-align:center;
+        padding:25px;
+    }
+
+    nav{
+        background:#023e8a;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        padding:15px 20px;
+        font-weight:bold;
+    }
+
+    nav a:hover{
+        background:#ffd166;
+        color:black;
+    }
+
+    section{
+        max-width:1000px;
+        margin:auto;
+        padding:40px 20px;
+    }
+
+    h2{
+        color:#0077b6;
+        margin-bottom:15px;
+        text-align:center;
+    }
+
+    .card{
+        background:white;
+        padding:25px;
+        margin-bottom:25px;
+        border-radius:10px;
+        box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .movies{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:20px;
+        text-align:center;
+    }
+
+    .movie{
+        background:#e8f4ff;
+        padding:20px;
+        border-radius:10px;
+    }
+
+    /* Payment Options */
+    .payment-option{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        margin:10px 0;
+        font-size:16px;
+    }
+
+    .payment-option input{
+        margin-right:10px;
+        width:18px;
+        height:18px;
+    }
+
+
+    .square input{
+        accent-color:#0077b6;
+    }
+
+    button{
+        padding:12px 25px;
+        background:#0077b6;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        transition:0.3s;
+        display:block;
+        margin:20px auto 0;
+    }
+
+    button:hover{
+        background:#03045e;
+        transform:scale(1.1);
+    }
+
+    footer{
+        background:#023e8a;
+        color:white;
+        text-align:center;
+        padding:15px;
+ 
+    }
+</style>
+
+
+</head>
+<body>
+
+<header>
+    <h1>🎟 Book Movie Ticket</h1>
+    <p>Easy Booking | Secure Payment</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="book-ticket.html">Book Ticket</a>
+    <a href="feedback.html">Feedback</a>
+</nav>
+
+<section>
+
+    <!-- About Book Ticket -->
+    <div class="card">
+        <h2>About Ticket Booking</h2>
+        <p>
+            IMAX provides a simple and fast ticket booking system.
+            Users can select their favorite movie, choose a payment method, and
+            book tickets online without any hassle.
+        </p>
+    </div>
+
+    <!-- Movie Selection -->
+    <div class="card">
+        <h2>Select Movie</h2>
+        <div class="movies">
+            <div class="movie">DHURANDAR</div>
+            <div class="movie">Avatra 3</div>
+            <div class="movie">KGF 2</div>
+        </div>
+    </div>
+
+    <!-- Payment Options -->
+    <div class="card">
+        <h2>Select Payment Method</h2>
+
+        <!-- Circle (Radio Buttons) -->
+        <div class="payment-option">
+            <input type="radio" name="payment" value="UPI">
+            <label>UPI</label>
+        </div>
+
+        <div class="payment-option">
+            <input type="radio" name="payment" value="Google Pay">
+            <label>Google Pay</label>
+        </div>
+
+        <div class="payment-option">
+            <input type="radio" name="payment" value="PhonePe">
+            <label>PhonePe</label>
+        </div>
+
+        <!-- Square style -->
+        <div class="payment-option square">
+            <input type="radio" name="payment" value="Credit Card">
+            <label>Credit / Debit Card</label>
+        </div>
+
+        <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 IMAX | Online Booking System</p>
+</footer>
+
+</body>
+</html>
